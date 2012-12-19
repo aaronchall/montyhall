@@ -39,7 +39,7 @@ def itermonty(iters=100000,knowsprize=True):
     lesstosswinrate = decimal.Decimal(str(successes/(iters-tosses)))
     print "\n           ***** Separate Run of Games *****"
     if not knowsprize: 
-        print "Of the", iters, "games,", tosses, "tossed (because Monty unknowingly"
+        print "Of ", iters, "games,", tosses, "tossed (because Monty unknowingly"
         print "picked the prize), the switch win rate overall was", winrate
         print "and the rate won, given", (iters - tosses), "opportunities to pick"
         print "was", successes, '/', (iters - tosses), 'or', lesstosswinrate
